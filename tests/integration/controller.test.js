@@ -33,7 +33,7 @@ describe('Controller-Service Integration Tests', () => {
     test('handleRemoveTodo should call service.removeTodo and update the model', () => {
         // TODO: First, directly add a todo to the service.
         const check = "Finish lab 3";
-        controller.handleAddTodo(check);
+        service.addTodo(check);
         // Get the ID of the new todo.
         const id = service.todos[0].id;
         // Call the controller's handleRemoveTodo method with that ID.
